@@ -1,10 +1,16 @@
 import React from 'react'
 import gsap from "gsap";
-import {ScrollTrigger,SplitText} from "gsap/all";
-gsap.registerPlugin(ScrollTrigger,SplitText);
+import {ScrollTrigger, SplitText} from "gsap/all";
+import Navbar from "./components/Navbar.jsx";
+import Hero from "./components/Hero.jsx";
+
+gsap.registerPlugin(ScrollTrigger, SplitText);
 const App = () => {
     return (
-        <div className='text-3xl text-red-300 flex-center h-[100vh] '>App</div>
-    )
+        <main>
+            <Navbar/>
+            <Hero/>
+            <div className='h-dvh bg-black'></div>
+        </main>)
 }
 export default App
